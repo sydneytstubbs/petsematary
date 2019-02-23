@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, p{
 .storygrid3{
   display:grid;
   grid-template-columns: 1fr 5fr 5fr 1fr;
-  grid-template-rows: 1fr 3.5fr .25fr;
+  grid-template-rows: 1fr 3.5fr 2fr;
   grid-template-areas:
   ". top . ."
   ". . . ."
@@ -269,7 +269,6 @@ h1, h2, h3, h4, h5, p{
 
 .aboutpic{
   grid-area:aboutpic;
-  float: right;
   max-width: 100%;
   justify-content: right;
 }
@@ -282,26 +281,50 @@ h1, h2, h3, h4, h5, p{
   line-height: 1.1;
 }
 
+@media(max-width: 1200px){
+  .para{
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .aboutpic{
+    padding-top: 3em;
+    margin-left: 2em;
+  }
+}
+
 /**STARRING**/
 .starringgrid{
   display:grid;
-  grid-template-columns: 1fr 2fr 3fr 5fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr 3fr 5fr;
   grid-template-rows: .25fr .5fr 1fr 1fr .15fr ;
   grid-template-areas:
-  ". sectitle clarkeimage clarkeimage "
-  ". clarkehead clarkeimage clarkeimage "
-  ". amyimage amyimage amyhead "
-  ". lithhead lithimage lithimage "
-  ". . . . ";
-  justify-items: center;
-
+  ". sectitle . clarkeimage clarkeimage "
+  ". clarkehead clarkehead clarkeimage clarkeimage "
+  ". amyimage amyimage amyhead amyhead"
+  ". lithhead lithhead lithimage lithimage"
+  ". . . . . ";
+  self-align: end;
 }
 
 #clarkeimage{
   grid-area:clarkeimage;
-  padding-left: 10em;
+  padding-left: 20em;
   width: 80%;
+  align-self: end;
 }
+
+
+#clarkehead{
+  grid-area: clarkehead;
+  color: #ff0000;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 50%;
+}
+
+
 
 #amyimage{
   grid-area: amyimage;
@@ -310,10 +333,14 @@ h1, h2, h3, h4, h5, p{
 
 #amyhead{
   grid-area:amyhead;
-  color: #ffffff;
-  font-size: 32px;
-  padding-top: 3em;
+  color: #ff0000;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20%;
+  margin-right: 20%;
 }
+
+
 
 #lithimage{
   grid-area: lithimage;
@@ -324,17 +351,37 @@ h1, h2, h3, h4, h5, p{
 
 #lithhead{
   grid-area:lithhead;
-  color: #ffffff;
-  font-size: 32px;
-
-}
-
-#clarkehead{
-  grid-area: clarkehead;
   color: #ff0000;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
+  margin-top: 50%;
+
 }
+
+@media (max-width: 1000px){
+  #clarkeimage{
+    padding-left: 0em;
+    width: 100%;
+  }
+  .starringgrid{
+    display:grid;
+    grid-template-columns: 1fr 2fr 3fr 5fr;
+    grid-template-rows: .25fr .5fr 1fr 1fr .15fr ;
+    grid-template-areas:
+    ". sectitle clarkeimage clarkeimage "
+    ". clarkehead clarkeimage clarkeimage "
+    ". amyimage amyimage amyhead "
+    ". lithhead lithimage lithimage"
+    ". . . . . ";
+    self-align: end;
+  }
+  #amyimage{
+    grid-area: amyimage;
+      width: 90%;
+  }
+}
+
+
 
 
 
