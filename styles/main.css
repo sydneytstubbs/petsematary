@@ -70,11 +70,12 @@ h1, h2, h3, h4, h5, p{
 .storygrid{
   display:grid;
   grid-template-columns: 1fr 5fr 5fr 1fr;
-  grid-template-rows: 1fr 3fr auto;
+  grid-template-rows: 1fr 2.5fr 1fr 1fr;
   grid-template-areas:
   ". story1 . ."
   ". . . ."
-  ". . story2 .";
+  ". . story2 ."
+  ". . . .";
 }
 
 .story{
@@ -109,6 +110,9 @@ h1, h2, h3, h4, h5, p{
   padding-top: 3em;
 }
 
+#power{
+  font-size: 45px;
+}
 #lowtitle{
   grid-area: story2;
   text-align: right;
@@ -120,14 +124,7 @@ h1, h2, h3, h4, h5, p{
   text-align: right;
   color: #FF0000;
   margin-right: 10px;
-}
-
-#lowtitle2{
-  grid-area: story2;
-  text-align: right;
-  color: #FF0000;
-  margin-right: 10px;
-
+  margin-bottom: -80px;
 }
 
 
@@ -158,18 +155,21 @@ h1, h2, h3, h4, h5, p{
 .storygrid3{
   display:grid;
   grid-template-columns: 1fr 5fr 5fr 1fr;
-  grid-template-rows: 1fr 3.5fr 2fr;
+  grid-template-rows: 1fr 3fr 1fr 4fr;
   grid-template-areas:
   ". top . ."
   ". . . ."
-  ". . bottom .";
+  ". . bottom ."
+  ". . . .";
+  padding-top: 150px;
 }
 
 #headtitle1{
   grid-area: top;
   color: #ffffff;
-  font-size: 32px;
-  padding-top: bottom;
+  font-size: 45px;
+  margin-bottom: -20px;
+  padding-top: 0em;
 }
 
 #lowtitle2{
@@ -178,6 +178,7 @@ h1, h2, h3, h4, h5, p{
   font-size: 55px;
   grid-area: ;
   padding-top: .6em;
+  text-align: right;
 }
 /**story 4 section**/
 
@@ -314,16 +315,10 @@ h1, h2, h3, h4, h5, p{
   align-self: end;
 }
 
-
-#clarkehead{
-  grid-area: clarkehead;
-  color: #ff0000;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 20%;
-  margin-left: 50%;
+.starhead{
+  display: grid;
+  justify-items: center;
 }
-
 
 
 #amyimage{
@@ -332,12 +327,15 @@ h1, h2, h3, h4, h5, p{
 }
 
 #amyhead{
+  display:grid;
+  justify-items: center;
   grid-area:amyhead;
   color: #ff0000;
-  font-size: 40px;
-  text-align: center;
+  font-size: 55px;
+  text-align: right;
   margin-top: 20%;
   margin-right: 20%;
+  letter-spacing: 5px;
 }
 
 
@@ -352,10 +350,21 @@ h1, h2, h3, h4, h5, p{
 #lithhead{
   grid-area:lithhead;
   color: #ff0000;
-  font-size: 40px;
-  text-align: center;
+  font-size: 55px;
+  text-align: left;
   margin-top: 50%;
+  letter-spacing: 5px;
 
+}
+
+#clarkehead{
+  grid-area: clarkehead;
+  color: #ff0000;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 50%;
+  letter-spacing: 5px;
 }
 
 @media (max-width: 1000px){
@@ -380,6 +389,7 @@ h1, h2, h3, h4, h5, p{
       width: 90%;
   }
 }
+
 
 
 
@@ -491,4 +501,16 @@ h1, h2, h3, h4, h5, p{
   -ms-transform-origin: 100% 50%;
   -o-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
+}
+
+.footer{
+  width: 100%;
+  background-color: #272626;
+  height: 100px;
+}
+
+.footertype{
+  color: white;
+  padding-top: 50px;
+  padding-left: 100px;
 }
