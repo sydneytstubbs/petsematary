@@ -1,0 +1,447 @@
+@import url(//db.onlinewebfonts.com/c/cb43dbbea6e9ee5fcf73b7e6772cec00?family=Weiss+Std);
+
+html{
+font-size:10px;
+height:100%;
+width:100%;
+min-width:350px;
+margin:0;
+padding:0;
+scroll-behavior: smooth;
+}
+
+body{
+background-color: #000000;
+}
+
+/**Hero**/
+
+.hero{
+  display: block;
+  background: url("../images/herophoto.png");
+  height: 1000px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+/**Pet Title Font**/
+
+h1, h2, h3, h4, h5, p{
+ font-family: "weiss std";
+}
+
+/**Title Grid**/
+
+.herogrid{
+  display:grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: 500px 500px;
+  grid-template-areas:
+  ". lalaland ."
+  ". maintitle ."
+}
+
+/**Pet Semetary Title**/
+
+.title1{
+  color: #FF0000;
+  font-size: 55px;
+  grid-area: maintitle;
+  margin-bottom: -8px;
+}
+
+.title2{
+  color: #FF0000;
+  font-size: 90px;
+  grid-area: maintitle;
+  padding-top: .6em;
+}
+
+.date1{
+  color: #ffffff;
+  font-size: 40px;
+  grid-area: maintitle;
+  padding: 3.4em 0em 0em 4.2em;
+}
+
+/**STORY SECTION**/
+
+.storygrid{
+  display:grid;
+  grid-template-columns: 1fr 5fr 5fr 1fr;
+  grid-template-rows: 1fr 3fr auto;
+  grid-template-areas:
+  ". story1 . ."
+  ". . . ."
+  ". . story2 .";
+}
+
+.story{
+  display: block;
+  background: url("../images/children.png");
+  height: 1000px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position: right;
+}
+
+.sectiontitle{
+  grid-area: story1;
+  color: #ffffff;
+  font-size: 20px;
+  grid-area: ;
+  margin-bottom: -8px;
+}
+
+.title3{
+  grid-area: story1;
+  color: #ffffff;
+  font-size: 55px;
+  grid-area: ;
+  padding-top: .6em;
+}
+
+.head{
+  grid-area: story1;
+  color: #ffffff;
+  font-size: 32px;
+  padding-top: 3em;
+}
+
+#lowtitle{
+  grid-area: story2;
+  text-align: right;
+  color: #FF0000;
+}
+
+#lowtitle1{
+  grid-area: story2;
+  text-align: right;
+  color: #FF0000;
+  margin-right: 10px;
+}
+
+#lowtitle2{
+  grid-area: story2;
+  text-align: right;
+  color: #FF0000;
+  margin-right: 10px;
+
+}
+
+
+/**story 2 section**/
+
+.story3{
+  display: block;
+  background: url("../images/twomen.png");
+  height: 1000px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position: right;
+  margin-bottom: 75px;
+}
+
+
+.story2{
+  display: block;
+  background: url("../images/fearedit.png");
+  height: 1000px;
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position: right;
+}
+
+/**story 3 section**/
+
+.storygrid3{
+  display:grid;
+  grid-template-columns: 1fr 5fr 5fr 1fr;
+  grid-template-rows: 1fr 3.5fr .25fr;
+  grid-template-areas:
+  ". top . ."
+  ". . . ."
+  ". . bottom .";
+}
+
+#headtitle1{
+  grid-area: top;
+  color: #ffffff;
+  font-size: 32px;
+  padding-top: bottom;
+}
+
+#lowtitle2{
+  grid-area: bottom;
+  color: #ff0000;
+  font-size: 55px;
+  grid-area: ;
+  padding-top: .6em;
+}
+/**story 4 section**/
+
+.storygrid2{
+  display:grid;
+  grid-template-columns: 2fr 10fr 2fr;
+  grid-template-rows: .25fr 1.5fr 1.5fr .2fr;
+  grid-template-areas:
+  ". story1 ."
+  ". moviephoto ."
+  ". moviephoto .";
+  justify-items: center;
+}
+
+.moviephoto{
+  grid-area: moviephoto;
+  max-width: 500px;
+  height: auto;
+
+}
+
+.posterhead{
+  color: #ff0000;
+  grid-area: story1;
+  font-size: 40px;
+}
+
+.posterhead1{
+  color: #ffffff;
+  grid-area: story1;
+  font-size: 55px;
+  padding-top: 1em;
+}
+
+/**story 4 section**/
+
+
+
+.trailergrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 9fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr ;
+  grid-template-areas:
+  ". sectitle . ."
+  ". video video ."
+  ". . . .";
+
+}
+.video{
+  padding-top: 40px;
+  grid-area: video;
+  margin:auto;
+
+}
+
+.trailertitle{
+  color: #ffffff;
+  grid-area: sectitle;
+  font-size: 20px;
+  text-align: left;
+
+}
+
+.trailerlabel{
+  color: #ffffff;
+  grid-area: sectitle;
+  font-size: 55px;
+  padding-top: .5em;
+  text-align: left;
+}
+
+.moviephoto2{
+  grid-area:horse;
+}
+
+/**about section**/
+
+.aboutgrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr 3fr 6fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas:
+  ". sectitle . aboutpic ."
+  ". para para aboutpic ."
+  ". . . . .";
+
+
+}
+
+.aboutpic{
+  grid-area:aboutpic;
+  float: right;
+  max-width: 100%;
+  justify-content: right;
+}
+
+
+.para{
+  grid-area: para;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+/**STARRING**/
+.starringgrid{
+  display:grid;
+  grid-template-columns: 1fr 2fr 3fr 5fr 1fr;
+  grid-template-rows: .25fr .5fr 1fr 1fr .15fr ;
+  grid-template-areas:
+  ". sectitle clarkeimage clarkeimage "
+  ". clarkehead clarkeimage clarkeimage "
+  ". amyimage amyimage amyhead "
+  ". lithhead lithimage lithimage "
+  ". . . . ";
+  justify-items: center;
+
+}
+
+#clarkeimage{
+  grid-area:clarkeimage;
+  padding-left: 10em;
+  width: 80%;
+}
+
+#amyimage{
+  grid-area: amyimage;
+    width: 130%;
+}
+
+#amyhead{
+  grid-area:amyhead;
+  color: #ffffff;
+  font-size: 32px;
+  padding-top: 3em;
+}
+
+#lithimage{
+  grid-area: lithimage;
+  padding-left: 10em;
+    width: 100%;
+
+}
+
+#lithhead{
+  grid-area:lithhead;
+  color: #ffffff;
+  font-size: 32px;
+
+}
+
+#clarkehead{
+  grid-area: clarkehead;
+  color: #ff0000;
+  font-size: 50px;
+  text-align: center;
+}
+
+
+
+/**coming soon section**/
+#comingsoon{
+  color: #ffffff;
+  padding: 4em 0em 4em 0em;
+  font-size: 35px;
+  text-align: center;
+}
+
+
+#starsec{
+  text-align: left;
+}
+
+
+.fade {
+    opacity: 1;
+}
+/*Navigation Rules*/
+
+.cd-nav-trigger {
+  display: none;
+}
+
+#cd-vertical-nav {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1072;
+}
+#cd-vertical-nav li {
+  text-align: left;
+}
+#cd-vertical-nav a {
+  display: inline-block;
+  /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#cd-vertical-nav a span {
+  float: left;
+  display: inline-block;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+#cd-vertical-nav a:hover span {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+#cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white;
+}
+#cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.2s, background-color 0.5s;
+  transition: transform 0.2s, background-color 0.5s;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+#cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  margin-left: 5px;
+  padding: .4em .5em;
+  color: #ffffff;
+  font-size: 20px;
+  font-size: 1rem;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0;
+  -webkit-transform-origin: 100% 50%;
+  -moz-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -o-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+}
